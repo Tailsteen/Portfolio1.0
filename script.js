@@ -3,7 +3,9 @@ const classData = {
     'Spring 2025': ['Fundamentals of Computing II', 'Discrete Structures', 'Assembly Language Programming', 'Calculus III'],
     'Summer 2025': ["Software Constriction"],
     'Fall 2025': ["Professional Development I", "Principles of Programming Languages", "Introduction to Algorithms", "Introduction to Operating Systems", "Software Modeling and Design"],
-    'Spring 2026': ["Computer Architecture", "Introduction to Computer Networks", "Adaptive and Assistive Technologies", "Introduction to Data Science"]
+    'Spring 2026': ["Computer Architecture", "Introduction to Computer Networks", "Adaptive and Assistive Technologies", "Introduction to Data Science"],
+    'Fall 2026': ["User Interface Design and Evaluation", "Database Systems", "Computers Ethics", "Data Mining", "Professional Development II"]
+
 };
 
 function openSemester(semester) {
