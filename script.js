@@ -1,3 +1,5 @@
+
+// Data that is used for the folders
 const classData = {
     'Fall 2024': ['Fundamentals of Computing I', 'Digital Logic Circuits', 'Engineering Orientation', 'Statistics for Engineers and Scientists'],
     'Spring 2025': ['Fundamentals of Computing II', 'Discrete Structures', 'Assembly Language Programming', 'Calculus III'],
@@ -32,4 +34,35 @@ function openSemester(semester) {
 
 function closeSemester() {
     document.getElementById('semesterModal').style.display = 'none';
+}
+
+const hobbyData = {
+    'Photography' : [''],
+    'Cooking' : [''],
+    'Travleing': [''],
+    'Reading' : [''],
+};
+
+// Function to open the hobbies modal
+// Function to open the specific Hobbies pop-up
+function openHobby(hobbyName) {
+    // 1. Open the Hobbies modal
+    document.getElementById('hobbyModal').style.display = 'flex';
+    
+    // 2. Change the title of the window to match the button clicked
+    document.getElementById('hobbyModalTitle').innerText = hobbyName + ".exe";
+    
+    // 3. Hide all hobby content sections first
+    let allContents = document.getElementsByClassName('hobby-content');
+    for (let i = 0; i < allContents.length; i++) {
+        allContents[i].style.display = 'none';
+    }
+    
+    // 4. Show only the content section for the hobby that was clicked
+    document.getElementById('hobby-' + hobbyName).style.display = 'block';
+}
+
+// Function to close the Hobbies pop-up
+function closeHobby() {
+    document.getElementById('hobbyModal').style.display = 'none';
 }

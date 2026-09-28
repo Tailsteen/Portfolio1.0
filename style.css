@@ -176,6 +176,16 @@ body.resume-layout {
     gap: 15px;
 }
 
+.contact-content {
+    padding: 20px; /* This pushes the text 20 pixels away from all sides */
+}
+
+/* Optional: Add a little space under the H3 so it doesn't touch the first bullet */
+.contact-content h3 {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
 .semester-btn {
     width: 100%;
     padding: 15px;
@@ -260,6 +270,38 @@ body.resume-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+/* Styles specifically for your new Hobby pages */
+.hobby-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+/* ========================================= */
+/* BACK BUTTON STYLING FOR HOBBY PAGES       */
+/* ========================================= */
+.back-button-wrapper {
+    width: 100%;
+    max-width: 1000px; /* This makes it line up perfectly with your grid's left edge */
+    display: flex;
+    justify-content: flex-start; /* Pushes the button to the left */
+    margin-bottom: 10px;
+}
+
+.back-button-wrapper .semester-btn {
+    width: auto; /* Overrides the 100% width so it shrinks to fit the text */
+    padding: 10px 20px; /* Makes it a nice, compact size */
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0;
+}
+
+.hobby-image {
+    max-width: 100%;
+    width: 300px; /* Changes how big the photos display */
+    border-radius: 10px; /* Gives the photos rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a cool drop shadow */
 }
 
 .folder-item {
